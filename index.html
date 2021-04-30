@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer="module"></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="box" id="box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+
+    <div class="inputData">
+      <input type="search" class="inputField" placeholder=" Search City"/><i class="fas fa-search" id="searchBar"></i>
+    </div>
+
+    <p class="errorMsg" id="errorMsg">No Data Found</p>
+
+    <div>
+      <div class="info" id="info">
+        <div class="weathercon"><i class='fas fa-sun' id="weatherclr"></i></div>
+        <div class="description"></div>
+        <h2 class="location">
+          <i class="fas fa-street-view"></i><div id="cityName"></div>
+        </h2>
+        <p class="date" id="date"></p>
+        <h1 class="temp" id="temp"></h1>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+        <h3 class="tempmin_max" id="tempmin_max"></h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
